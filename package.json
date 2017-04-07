@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"jwt-decode",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "jwt-decode",
+    "description": "api documentation for [jwt-decode (v2.2.0)](https://github.com/auth0/jwt-decode#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-jwt-decode.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-jwt-decode) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-jwt-decode.svg)](https://travis-ci.org/npmdoc/node-npmdoc-jwt-decode)",
     "devDependencies": {
-        "jwt-decode": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "jwt-decode": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-jwt-decode",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-jwt-decode",
+    "keywords": [
+        "documentation",
+        "jwt-decode"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_jwt_decode.js",
+    "name": "npmdoc-jwt-decode",
+    "nameAlias": "npmdoc_jwt_decode",
+    "nameOriginal": "npmdoc-jwt-decode",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-jwt-decode"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
