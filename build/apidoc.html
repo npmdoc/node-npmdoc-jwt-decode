@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.jwt-decode.jwt-decode">
+            function <span class="apidocSignatureSpan"></span>jwt-decode
+            <span class="apidocSignatureSpan">(token, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.jwt-decode.InvalidTokenError">
             function <span class="apidocSignatureSpan">jwt-decode.</span>InvalidTokenError
             <span class="apidocSignatureSpan">(message)</span>
@@ -76,6 +85,31 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.jwt-decode" id="apidoc.module.jwt-decode">module jwt-decode</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.jwt-decode.jwt-decode" id="apidoc.element.jwt-decode.jwt-decode">
+        function <span class="apidocSignatureSpan"></span>jwt-decode
+        <span class="apidocSignatureSpan">(token, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">jwt-decode = function (token, options) {
+  if (typeof token !== &#x27;string&#x27;) {
+    throw new InvalidTokenError(&#x27;Invalid token specified&#x27;);
+  }
+
+  options = options || {};
+  var pos = options.header === true ? 0 : 1;
+  try {
+    return JSON.parse(base64_url_decode(token.split(&#x27;.&#x27;)[pos]));
+  } catch (e) {
+    throw new InvalidTokenError(&#x27;Invalid token specified: &#x27; + e.message);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
