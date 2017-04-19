@@ -1,9 +1,14 @@
-# api documentation for  [jwt-decode (v2.2.0)](https://github.com/auth0/jwt-decode#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-jwt-decode.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-jwt-decode) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-jwt-decode.svg)](https://travis-ci.org/npmdoc/node-npmdoc-jwt-decode)
+# npmdoc-jwt-decode
+
+#### api documentation for  [jwt-decode (v2.2.0)](https://github.com/auth0/jwt-decode#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-jwt-decode.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-jwt-decode) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-jwt-decode.svg)](https://travis-ci.org/npmdoc/node-npmdoc-jwt-decode)
+
 #### Decode JWT tokens, mostly useful for browser applications.
 
-[![NPM](https://nodei.co/npm/jwt-decode.png?downloads=true)](https://www.npmjs.com/package/jwt-decode)
+[![NPM](https://nodei.co/npm/jwt-decode.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/jwt-decode)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-jwt-decode/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-jwt-decode_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-jwt-decode/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-jwt-decode/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-jwt-decode/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-jwt-decode/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-jwt-decode/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-jwt-decode/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Jose F. Romaniello",
-        "email": "jfromaniello@gmail.com",
         "url": "http://joseoncode.com"
     },
     "bugs": {
@@ -58,13 +62,11 @@
     "main": "lib/index.js",
     "maintainers": [
         {
-            "name": "jfromaniello",
-            "email": "jfromaniello@gmail.com"
+            "name": "jfromaniello"
         }
     ],
     "name": "jwt-decode",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/auth0/jwt-decode.git"
@@ -74,29 +76,6 @@
     },
     "version": "2.2.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module jwt-decode](#apidoc.module.jwt-decode)
-1.  [function <span class="apidocSignatureSpan">jwt-decode.</span>InvalidTokenError (message)](#apidoc.element.jwt-decode.InvalidTokenError)
-
-
-
-# <a name="apidoc.module.jwt-decode"></a>[module jwt-decode](#apidoc.module.jwt-decode)
-
-#### <a name="apidoc.element.jwt-decode.InvalidTokenError"></a>[function <span class="apidocSignatureSpan">jwt-decode.</span>InvalidTokenError (message)](#apidoc.element.jwt-decode.InvalidTokenError)
-- description and source-code
-```javascript
-function InvalidTokenError(message) {
-  this.message = message;
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
